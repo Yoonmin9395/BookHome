@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Бумажный дом</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="cap">
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="Логотип"></a>
+                <nav>
+                    <a  href="index.html">Главная</a>
+                    <a href="katalog.html">Книги</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Доставка</a>
+                </nav>
+                <div class="search-box">
+                    <input type="search" placeholder="Твой следующий том...">
+                    <button class="button_search">
+                        <img src="img/lupa.png" alt="Поиск" style="width: 35px;">
+                    </button>
+                </div>
+                <img class="korzina" src="img/korzina.svg" alt="Корзина">
+            </div>
+        </header>
+        <main>
+            <div id="content">
+                <h1 class="fw-bold mb-4 title">Оформление заказа</h1>
+                <section class="card border-0 rounded-4 p-4 mb-4">
+                    <div class="d-flex align-items-start">
+                        <div class="bg-white p-2 rounded-3">
+                            <img src="img/sweet_home.png" alt="Милый дом" class="book">
+                        </div>
+                        <div class="ms-4">
+                            <h2 class="h5 fw-bold mb-1" style="color: #2D2418; margin: 50px 0 0 27px; font-size: 24px;">Милый дом 3 том</h2>
+                            <p class="fw-medium mb-0" style="color: #000000; margin: 24px 0 0 27px; font-size: 24px;">1800 ₽</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="card border-0 rounded-4 p-4 mb-4">
+                    <h3 class="text-center mb-4 zagolovok">Способ получения</h3>
+                    <div class="row g-4">
+                        <div class="col-md-5">
+                            <select class="form-select polya">
+                                <option selected>Выберите способ доставки</option>
+                                <option>Курьером</option>
+                                <option>Почтой России</option>
+                                <option>СДЭК</option>
+                                <option>Самовывоз</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control polya" placeholder="Укажите адрес доставки">
+                        </div>
+                    </div>
+                </section>
+                <section class="card border-0 rounded-4 p-4 mb-4">
+                    <h3 class="text-center mb-4 zagolovok">Способ оплаты</h3>
+                    <div class="d-flex justify-content-center gap-5 flex-wrap">
+                        <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input box" type="radio" name="payment" id="card">
+                            <label class="form-check-label ms-2" for="card" style="font-size: 20px;">Картой</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input box" type="radio" name="payment" id="cash">
+                            <label class="form-check-label ms-2" for="cash" style="font-size: 20px;">Наличными при получении</label>
+                        </div>
+                        <div class="form-check d-flex align-items-center">
+                            <input class="form-check-input box" type="radio" name="payment" id="sbp">
+                            <label class="form-check-label ms-2" for="sbp" style="font-size: 20px;">СБП</label>
+                        </div>
+                    </div>
+                </section>
+                <section class="card border-0 rounded-4 p-4 mb-4">
+                    <h3 class="text-center mb-4 zagolovok">Получатель</h3>
+                    <div class="row g-4">
+                        <div class="col-md-5">
+                            <input type="text" class="form-control polya" placeholder="Введите ФИО">
+                        </div>
+                        <div class="col-md-5">
+                            <input type="tel" class="form-control polya" placeholder="Введите номер телефона">
+                        </div>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control polya" placeholder="Введите email">
+                        </div>
+                        <div class="col-12" style="margin-left: 120px;">
+                            <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input box" type="checkbox" id="agreement">
+                                <label class="form-check-label ms-2" for="agreement" style="font-size: 20px;">
+                                    Согласие на обработку персональных данных
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="text-center">
+                    <button class="btn btn-lg fw-bold oformit" data-bs-toggle="modal" data-bs-target="#successModal">
+                        Оформить заказ
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="line">
+                <div class="footer_container">
+                    <a href="index.html" class="logo2"><img src="img/logo2.svg" alt="Логотип"></a>
+                    <div class="kontakty">
+                        <h2 class="zag">Контакты</h2>
+                        <div class="mail">
+                            <img src="img/mail.svg" alt="Почта">
+                            <a href="#">peper_home@mail.ru</a>
+                        </div>
+                        <div class="phone">
+                            <img src="img/phone.svg" alt="Телефон">
+                            <a href="#">+7 908 113-51-54</a>
+                        </div>
+                        <div class="location">
+                            <img src="img/location.svg" alt="Адрес">
+                            <a href="#">Санкт-Петербург, ул. Книжная 1</a>
+                        </div>
+                    </div>
+                    <div class="help">
+                        <h2 class="zag">Помощь</h2>
+                        <div class="mail">
+                            <img src="img/mail.svg" alt="Почта">
+                            <a href="#">poddergka@mail.ru</a>
+                        </div>
+                        <div class="phone">
+                            <img src="img/phone.svg" alt="Телефон">
+                            <a href="#">+7 908 779-99-96</a>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <div class="aziya">
+                            <a href="#"><img class="kakao" src="img/kakao.svg" alt="Иконка"></a>
+                            <a href="#"><img class="wechat" src="img/wechat.svg" alt="Иконка"></a>
+                        </div>
+                        <div class="russ">
+                            <a href="#"><img class="telegram" src="img/telegram.svg" alt="Иконка"></a>
+                            <a href="#"><img class="vk" src="img/vk.svg" alt="Иконка"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 27px;">&copy; 2026 Бумажный дом - магазин азиатской литературы</p>
+            <p style="margin-top: 9px; margin-bottom: 20px;">Книги, которых больше нигде нет</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="modal fade" id="successModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
+                <div class="modal-content custom-modal-content">
+                    <button type="button" class="close-btn" onclick="window.location.href='index.html'" aria-label="Закрыть">
+                        <img src="img/exit_modal.svg" alt="Закрыть" style="width: 55px; height: 55px;">
+                    </button>
+                    <div class="modal-body text-center p-0">
+                        <p class="modal-text mb-4">Заказ успешно оформлен!</p>
+                        <div class="my-4">
+                            <img src="img/hlopushka.svg" alt="Хлопушка" class="modal-popper-icon">
+                        </div>
+                        <p class="modal-text2 mt-4">Спасибо за покупку!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
